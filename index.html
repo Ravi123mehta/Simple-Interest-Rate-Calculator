@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Added Meta Description for SEO enhancement criteria compliance -->
+    <meta name="description" content="A simple and interactive web application to calculate simple interest rates dynamically over time.">
     <title>Simple Interest Calculator</title>
-    <!-- Task 1: Explicit Favicon Definition -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Task 2: Fixed Missing CSS Reference -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +20,6 @@
 
         <div class="form-group">
             <label for="rate">Interest Rate (%)</label>
-            <!-- A range slider to dynamically select interest rate values -->
             <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" oninput="updateRateView(this.value)">
             <span id="rate_val">10.25%</span>
         </div>
@@ -43,13 +42,11 @@
 
         <button onclick="computeInterest()">Compute Interest</button>
 
-        <!-- Container where computed results will dynamically change -->
         <div id="result-container">
             <span id="result"></span>
         </div>
     </div>
 
-    <!-- Script file linked at the bottom for performance -->
     <script src="script.js"></script>
 </body>
 </html>
